@@ -4,14 +4,13 @@ from datetime import datetime as dt
 import requests
 import argparse
 
-parser = argparse.ArgumentParser(description='My crawler (By B08902031)')
+parser = argparse.ArgumentParser(description='Placeholder')
 
 parser.add_argument('--start-date', default='2020-12-31', dest="startDate")
 parser.add_argument('--end-date', default='2012-1-1', dest="endDate")
 parser.add_argument('--output', default='output.csv', dest="outputFileName")
 
 args=vars(parser.parse_args())
-print(args)
 def getOrdinal(dateStr):
     return dt.strptime(dateStr, r'%Y-%m-%d').date().toordinal()
 
@@ -80,4 +79,3 @@ def masterCrawl(startDateStr, endDateStr):
     ofile.close()
 
 masterCrawl(args['startDate'], args['endDate'])
-print("end of the program")
