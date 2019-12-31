@@ -5,7 +5,8 @@ B04505020 黃  弘
 B07902097 辛伯樂
 
 environment:
-```WSL Ubuntu 18.04
+```
+WSL Ubuntu 18.04
 python 3.6.9
 GCC 8.3.0
 lxml 4.4.2
